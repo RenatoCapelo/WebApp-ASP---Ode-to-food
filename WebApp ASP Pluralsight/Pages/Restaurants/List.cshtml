@@ -1,0 +1,30 @@
+﻿@page
+@model WebApp_ASP_Pluralsight.Pages.Restaurants.ListModel
+@{
+}
+
+<h1>Restaurants</h1>
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" asp-for="SearchTerm" placeholder="Search..." />
+            <span class="input-group-btn">
+                <button class="btn btn-primary">
+                    submit
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+<table class="table">
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        <tr>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.cuisine</td>
+        </tr>
+    }
+</table>
+
+<!--<div>@Model.Message</div>-->

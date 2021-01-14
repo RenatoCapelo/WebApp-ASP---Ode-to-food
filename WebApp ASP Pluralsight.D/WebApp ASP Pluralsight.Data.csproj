@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WebApp_ASP_Pluralsight.D</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApp ASP Pluralsight.core\WebApp ASP Pluralsight.core.csproj" />
+  </ItemGroup>
+
+</Project>

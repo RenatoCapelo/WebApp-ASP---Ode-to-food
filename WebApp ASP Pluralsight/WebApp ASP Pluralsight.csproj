@@ -5,4 +5,8 @@
     <RootNamespace>WebApp_ASP_Pluralsight</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApp ASP Pluralsight.D\WebApp ASP Pluralsight.Data.csproj" />
+  </ItemGroup>
+
 </Project>

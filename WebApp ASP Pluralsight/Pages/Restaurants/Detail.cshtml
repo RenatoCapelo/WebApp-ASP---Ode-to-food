@@ -1,0 +1,20 @@
+﻿@page
+@model WebApp_ASP_Pluralsight.Pages.Restaurants.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.restaurant.Name</h2>
+
+<div>
+    Location: @Model.restaurant.Location
+</div>
+<div>
+    Cusine: @Model.restaurant.cuisine
+</div>
+<div>
+    ID: @Model.restaurant.Id
+</div>
+
+<a asp-page="./List" class="btn btn-primary"> All restaurants</a>
+
