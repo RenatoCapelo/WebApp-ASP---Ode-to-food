@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp ASP Pluralsight", "WebApp ASP Pluralsight\WebApp ASP Pluralsight.csproj", "{0566B038-9B91-492D-9D4B-F84A091AF0D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp ASP Pluralsight", "WebApp ASP Pluralsight\WebApp ASP Pluralsight.csproj", "{0566B038-9B91-492D-9D4B-F84A091AF0D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp ASP Pluralsight.core", "WebApp ASP Pluralsight.core\WebApp ASP Pluralsight.core.csproj", "{6211E8C1-869F-437F-9259-C91017422788}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp ASP Pluralsight.core", "WebApp ASP Pluralsight.core\WebApp ASP Pluralsight.core.csproj", "{6211E8C1-869F-437F-9259-C91017422788}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp ASP Pluralsight.Data", "WebApp ASP Pluralsight.D\WebApp ASP Pluralsight.Data.csproj", "{69CCE41A-464A-4932-85E8-8243FE8875D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp ASP Pluralsight.Data", "WebApp ASP Pluralsight.D\WebApp ASP Pluralsight.Data.csproj", "{69CCE41A-464A-4932-85E8-8243FE8875D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

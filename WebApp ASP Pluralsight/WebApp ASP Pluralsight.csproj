@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>WebApp_ASP_Pluralsight</RootNamespace>
+    <UserSecretsId>21522a53-ceed-4962-b72d-1433c35b1ed1</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
