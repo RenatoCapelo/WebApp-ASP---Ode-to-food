@@ -14,6 +14,9 @@ namespace WebApp_ASP_Pluralsight.Pages.Restaurants
         private readonly IRestaurantData restaurantData;
 
         public Restaurant restaurant { get; set; }
+
+        [TempData]
+        public string Message { get; set; }
         public DetailModel(IRestaurantData restaurantData)
         {
             this.restaurantData = restaurantData;

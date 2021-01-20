@@ -1,0 +1,29 @@
+﻿@using WebApp_ASP_Pluralsight.core
+@model Restaurant
+
+<div class="card">
+    <div class="card-header">
+        <h3>@Model.Name</h3>
+    </div>
+    <div class="card-body">
+        <span>Location: @Model.Location</span>
+        <span>Cuisine @Model.cuisine</span>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-light"
+           asp-page="./Details"
+           asp-route-restaurantId="@Model.Id">
+            <i class="fa fa-search"></i>
+        </a>
+        <a class="btn btn-light"
+           asp-page="./Edit"
+           asp-route-restaurantId="@Model.Id">
+            <i class="fa fa-edit"></i>
+        </a>
+        <a class="btn btn-danger"
+           asp-page="./Delete"
+           asp-route-restaurantId="@Model.Id">
+            <i class="fa fa-times-circle"></i>
+        </a>
+    </div>
+</div>

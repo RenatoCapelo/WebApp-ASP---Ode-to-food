@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp ASP Pluralsight", "WebApp ASP Pluralsight\WebApp ASP Pluralsight.csproj", "{0566B038-9B91-492D-9D4B-F84A091AF0D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6211E8C1-869F-437F-9259-C91017422788} = {6211E8C1-869F-437F-9259-C91017422788}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp ASP Pluralsight.core", "WebApp ASP Pluralsight.core\WebApp ASP Pluralsight.core.csproj", "{6211E8C1-869F-437F-9259-C91017422788}"
 EndProject

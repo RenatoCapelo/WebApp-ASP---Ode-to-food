@@ -16,40 +16,13 @@
         </div>
     </div>
 </form>
-<table class="table">
-    <thead class="thead-dark">
-        <tr>
-            <th>Nome</th>
-            <th>Localização</th>
-            <th>Tipo de cozinha</th>
-            <th>Detalhes</th>
-            <th>Editar</th>
-        </tr>
-    </thead>
-    @foreach (var restaurant in Model.Restaurants)
-    {
-        <tr>
-            <td>@restaurant.Name</td>
-            <td>@restaurant.Location</td>
-            <td>@restaurant.cuisine</td>
 
-            <td>
-                <a class="btn btn-light"
-                   asp-page="./Details"
-                   asp-route-restaurantId="@restaurant.Id">
-                    <i class="fa fa-search"></i>
-                </a>
-            </td>
+@foreach(var restaurant in Model.Restaurants)
+{
+    <partial name="_Summary" model="restaurant" />
+    <br />
+}
 
-            <td>
-                <a class="btn btn-light"
-                   asp-page="./Edit"
-                   asp-route-restaurantId="@restaurant.Id">
-                    <i class="fa fa-edit"></i>
-                </a>
-            </td>
-        </tr>
-    }
-</table>
+<a asp-page="./Edit" class="btn btn-primary">Create New</a>
 
 <!--<div>@Model.Message</div>-->

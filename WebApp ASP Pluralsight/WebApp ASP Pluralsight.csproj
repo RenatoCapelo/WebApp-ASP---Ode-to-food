@@ -1,10 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>WebApp_ASP_Pluralsight</RootNamespace>
     <UserSecretsId>21522a53-ceed-4962-b72d-1433c35b1ed1</UserSecretsId>
+    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\WebApp ASP Pluralsight.D\WebApp ASP Pluralsight.Data.csproj" />

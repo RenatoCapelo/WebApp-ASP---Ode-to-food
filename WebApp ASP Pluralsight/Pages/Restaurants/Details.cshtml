@@ -6,6 +6,11 @@
 
 <h2>@Model.restaurant.Name</h2>
 
+@if(Model.Message!=null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
+
 <div>
     Location: @Model.restaurant.Location
 </div>

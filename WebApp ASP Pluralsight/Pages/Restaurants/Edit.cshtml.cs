@@ -24,10 +24,17 @@ namespace WebApp_ASP_Pluralsight.Pages.Restaurants
             this.htmlHelper = htmlHelper;
         }
 
-        public IActionResult OnGet(int restaurantId)
+        public IActionResult OnGet(int? restaurantId)
         {
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
-            Restaurant = restaurantData.GetByID(restaurantId);
+            if (restaurantId.HasValue)
+            {
+                Restaurant = restaurantData.GetByID(restaurantId.Value);
+            }
+            else
+            {
+                Restaurant = new Restaurant();
+            }
             if(Restaurant==null)
             {
                 return Redirect("./NotFound");
@@ -37,14 +44,23 @@ namespace WebApp_ASP_Pluralsight.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            if(ModelState.IsValid)
-            {
-                Restaurant = restaurantData.Update(Restaurant);
-                restaurantData.Commit();
-                return RedirectToPage("./Details", new { restaurantId = Restaurant.Id });
-            }
             Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+            if(!ModelState.IsValid)
+            {
             return Page();
+            }
+            if (Restaurant.Id > 0)
+            {
+                restaurantData.Update(Restaurant);
+                TempData["Message"] = "Restaurant Updated!";
+            }
+            else
+            {
+                restaurantData.New(Restaurant);
+                TempData["Message"] = "Restaurant Created!";
+            }
+            restaurantData.Commit();
+            return RedirectToPage("./Details", new { restaurantId = Restaurant.Id });
         }
     }
 }
